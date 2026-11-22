@@ -1,0 +1,16 @@
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Python environment
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Database
+data/*.db
+data/*.sqlite3
+
+# Other
+.DS_Store
