@@ -4,3 +4,4 @@ langdetect>=1.0.9
 gTTS>=2.5.1
 groq>=0.11.0
 pytest>=8.0
+python-dotenv
