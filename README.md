@@ -1,35 +1,66 @@
-# 🌐 GlobeTalk – AI-Powered Smart Language Translation Assistant
+# 🌐 GlobeTalk AI – Language Translation Tool
 
-Streamlit app: translation with auto-detect, voice-to-text (Groq Whisper), text-to-speech (gTTS),
-grammar correction, tone conversion, context-aware translation, travel phrasebook, AI conversation
-practice, and SQLite history with search/export.
+GlobeTalk AI is an AI-powered language assistant built using Python and Streamlit. It helps users translate text between languages through an easy-to-use interface.
 
-## Run locally
-```bash
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-cp .streamlit/secrets.toml.example .streamlit/secrets.toml   # add your Groq key
-streamlit run app.py
-```
-Get a free key at https://console.groq.com. Without a key, plain translation, detection, phrasebook
-and TTS still work; AI features show a friendly prompt.
+## ✨ Features
 
-## Deploy on Streamlit Cloud
-1. Push this folder to GitHub (`secrets.toml` and `*.db` are git-ignored).
-2. https://share.streamlit.io → New app → select repo, main file `app.py`.
-3. App settings → Secrets → paste `GROQ_API_KEY = "gsk_..."`.
+- 🌍 Translate text between supported languages
+- 🔎 Automatic source-language detection
+- 🎤 Voice input for speech-based translation
+- ✍️ Grammar correction and tone improvement
+- 💬 Context-aware translation
+- 📚 Phrasebook to save useful translations
+- 🕘 Translation history
+- 🎨 Premium dark-purple user interface
 
-Note: the SQLite file on Streamlit Cloud resets when the app restarts (ephemeral disk).
+## 🛠️ Technologies Used
 
-## Structure
-```
-app.py                UI (dashboard + pages)
-modules/config.py     languages, secure key lookup
-modules/translator.py translation + detection
-modules/ai.py         Groq: grammar, tone, context, practice, STT
-modules/speech.py     text-to-speech
-modules/db.py         SQLite history
-modules/phrasebook.py travel phrases
-tests/test_core.py    pytest suite
-```
-Run tests: `pytest -q`
+- Python
+- Streamlit
+- Groq AI
+- Translation and speech-processing libraries
+- CSS
+
+## 🚀 Live Demo
+
+[Open GlobeTalk AI](https://globetalk-ai-rakisha.streamlit.app/)
+
+## 💻 Run Locally
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/rakisha1302/CodeAlpha_LanguageTranslationTool.git
+   ```
+
+2. Open the project folder:
+
+   ```bash
+   cd CodeAlpha_LanguageTranslationTool
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Configure the required API credentials using Streamlit secrets or environment variables.
+
+5. Start the application:
+
+   ```bash
+   streamlit run app.py
+   ```
+
+## 🎯 Internship Task
+
+CodeAlpha – Artificial Intelligence Internship
+
+**Task 1: Language Translation Tool**
+
+## 👩‍💻 Developer
+
+Rakisha R.
+
+GitHub: https://github.com/rakisha1302
